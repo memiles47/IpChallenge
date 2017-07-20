@@ -23,11 +23,19 @@ namespace IpChallenge
                     continue;
                 }
 
-                Console.WriteLine($"Segment {Segment} Length: {SegmentLength}");
+                Message();
                 SegmentLength = 0;
                 Segment += 1;
             }
 
+            if (address[address.Length - 1].ToString() != ".")
+            {
+                Message();
+            }
+        }
+
+        private void Message()
+        {
             Console.WriteLine($"Segment {Segment} Length: {SegmentLength}");
         }
     }
