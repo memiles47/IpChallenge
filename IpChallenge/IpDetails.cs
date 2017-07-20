@@ -13,7 +13,10 @@ namespace IpChallenge
             SegmentLength = 0;
 
             if (address == "")
+            {
+                address = ".";
                 Segment = 0;
+            }
 
             foreach (var element in address)
             {
@@ -29,9 +32,7 @@ namespace IpChallenge
             }
 
             if (address[address.Length - 1].ToString() != ".")
-            {
                 Message();
-            }
         }
 
         private void Message()
