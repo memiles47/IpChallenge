@@ -1,5 +1,4 @@
 ﻿using System;
-//Kinda proud of this one
 namespace IpChallenge
 {
     internal static class Program
