@@ -2,7 +2,7 @@
 
 namespace IpChallenge
 {
-    class IpDetails
+    internal class IpDetails
     {
         private int Segment { get; set; }
         private int SegmentLength { get; set; }
